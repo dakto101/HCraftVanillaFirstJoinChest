@@ -34,7 +34,7 @@ public class HCraftVanillaFirstJoinChest extends JavaPlugin {
 			if (args.length == 1) {
 				if (args[0].toString().equals("reload")) {
 					HCraftVanillaFirstJoinChestConfig.reloadConfig();
-					sender.sendMessage("§aReload thanh cong.");
+					sender.sendMessage("Â§aReload thanh cong.");
 				}
 				if (args[0].toString().equals("test")) {
 					if (sender instanceof Player) {
@@ -45,9 +45,9 @@ public class HCraftVanillaFirstJoinChest extends JavaPlugin {
 			}
 			
 			if (args.length == 0) {
-				sender.sendMessage("§a======HCraftVanillaFirstJoinChest======");
-				sender.sendMessage("§a/firstjoinchest reload: Reload plugin.");
-				sender.sendMessage("§a/firstjoinchest test: Test plugin.");
+				sender.sendMessage("Â§a======HCraftVanillaFirstJoinChest======");
+				sender.sendMessage("Â§a/firstjoinchest reload: Reload plugin.");
+				sender.sendMessage("Â§a/firstjoinchest test: Test plugin.");
 			}
 			
 			

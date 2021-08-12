@@ -8,8 +8,6 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
 
-import me.dakto101.HCraftVanillaFirstJoinChest;
-
 public class HCraftVanillaFirstJoinChestConfig {
 
 	private static File file;
@@ -25,9 +23,9 @@ public class HCraftVanillaFirstJoinChestConfig {
 		if (!file.exists()) {
 			try {
 				file.createNewFile();
-				Bukkit.getServer().getConsoleSender().sendMessage("§aTao file thanh cong: " + FILENAME);
+				Bukkit.getServer().getConsoleSender().sendMessage("Â§aTao file thanh cong: " + FILENAME);
 			} catch (IOException e) {
-				Bukkit.getServer().getConsoleSender().sendMessage("§cKhong the tao ra file " + FILENAME);
+				Bukkit.getServer().getConsoleSender().sendMessage("Â§cKhong the tao ra file " + FILENAME);
 			}
 		}
 		config = YamlConfiguration.loadConfiguration(file);
@@ -39,7 +37,7 @@ public class HCraftVanillaFirstJoinChestConfig {
 	    try {
 			config.save(file);
 		} catch (IOException e) {
-			Bukkit.getServer().getConsoleSender().sendMessage("§cKhong the luu file " + FILENAME);
+			Bukkit.getServer().getConsoleSender().sendMessage("Â§cKhong the luu file " + FILENAME);
 			e.printStackTrace();
 		}
 	}
